@@ -154,6 +154,8 @@ set wildmode=longest:full,list:full
 set winminheight=0
 " Searches wrap around end of file
 set wrapscan
+" activate spell checking
+set spell spelllang=en_us
 
 " Use relative line numbers
 if exists("&relativenumber")
@@ -191,8 +193,8 @@ let g:syntastic_aggregate_errors     = 1   " run all linter and aggregate the er
 let g:syntastic_auto_loc_list        = 1   " open and close location list automatically
 let g:syntastic_error_symbol         = '✗' " error symbol
 let g:syntastic_style_error_symbol   = '✗' " error style symbol
-let g:syntastic_warning_symbol       = '⚠' " warning symbol
-let g:syntastic_style_warning_symbol = '⚠' " warning style symbol
+let g:syntastic_warning_symbol       = '!' " warning symbol
+let g:syntastic_style_warning_symbol = '!' " warning style symbol
 let g:syntastic_stl_format           = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]' " status line format
 
 " ag.vim (Searching)
